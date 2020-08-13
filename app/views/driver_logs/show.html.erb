@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @driver_log.date %>
+</p>
+
+<p>
+  <strong>Trip number:</strong>
+  <%= @driver_log.trip_number %>
+</p>
+
+<p>
+  <strong>Start odometer:</strong>
+  <%= @driver_log.start_odometer %>
+</p>
+
+<p>
+  <strong>End odometer:</strong>
+  <%= @driver_log.end_odometer %>
+</p>
+
+<p>
+  # <strong>Miles:</strong>
+  # <%= @driver_log.miles %>
+
+</p>
+
+<%= link_to 'Edit', edit_driver_log_path(@driver_log) %> |
+<%= link_to 'Back', driver_logs_path %>

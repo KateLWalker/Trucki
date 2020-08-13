@@ -10,6 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2020_08_12_180339) do
+
+  create_table "driver_logs", force: :cascade do |t|
+    t.date "date"
+    t.bigint "trip_number"
+    t.bigint "start_odometer"
+    t.bigint "end_odometer"
+    t.bigint "miles"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
 end

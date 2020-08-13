@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2020-08-12
+  trip_number: 
+  start_odometer: 
+  end_odometer: 
+  miles: 
+
+two:
+  date: 2020-08-12
+  trip_number: 
+  start_odometer: 
+  end_odometer: 
+  miles: 
