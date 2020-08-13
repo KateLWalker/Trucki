@@ -21,9 +21,53 @@
 </p>
 
 <p>
-  # <strong>Miles:</strong>
-  # <%= @driver_log.miles %>
+  <strong>Miles:</strong>
+  <%= @driver_log.miles = @driver_log.end_odometer - @driver_log.start_odometer %>
+</p>
 
+<p>
+  <strong>Hook:</strong>
+  <%= @driver_log.hk %>
+</p>
+
+<p>
+  <strong>Arrive/Drop:</strong>
+  <%= @driver_log.ad %>
+</p>
+
+<p>
+  <strong>Arrive:</strong>
+  <%= @driver_log.ar %>
+</p>
+
+<p>
+  <strong>Live Load:</strong>
+  <%= @driver_log.ll %>
+</p>
+
+<p>
+  <strong>Live Unload:</strong>
+  <%= @driver_log.lu %>
+</p>
+
+<p>
+  <strong>Stop:</strong>
+  <%= @driver_log.st %>
+</p>
+
+<p>
+  <strong>Stop/Drop:</strong>
+  <%= @driver_log.sd %>
+</p>
+
+<p>
+  <strong>Unschedule Time:</strong>
+  <%= @driver_log.ut %>
+</p>
+
+<p>
+  <strong>Layover:</strong>
+  <%= @driver_log.lo %>
 </p>
 
 <%= link_to 'Edit', edit_driver_log_path(@driver_log) %> |

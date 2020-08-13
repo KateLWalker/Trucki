@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_12_180339) do
+ActiveRecord::Schema.define(version: 2020_08_13_201220) do
 
   create_table "driver_logs", force: :cascade do |t|
     t.date "date"
@@ -20,6 +20,15 @@ ActiveRecord::Schema.define(version: 2020_08_12_180339) do
     t.bigint "miles"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "hk"
+    t.integer "ad"
+    t.integer "ar"
+    t.integer "ll"
+    t.integer "lu"
+    t.integer "st"
+    t.integer "sd"
+    t.integer "ut"
+    t.integer "lo"
   end
 
 end

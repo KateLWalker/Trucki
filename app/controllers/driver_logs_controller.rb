@@ -69,6 +69,6 @@ class DriverLogsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def driver_log_params
-      params.require(:driver_log).permit(:date, :trip_number, :start_odometer, :end_odometer, :miles)
+      params.require(:driver_log).permit(:date, :trip_number, :start_odometer, :end_odometer, :miles, :hk, :ad, :ar, :ll, :lu, :st, :sd, :ut, :lo)
     end
 end

@@ -10,6 +10,15 @@
       <th>Start odometer</th>
       <th>End odometer</th>
       <th>Miles</th>
+      <th>Hook</th>
+      <th>Arrive Drop</th>
+      <th>Arrive</th>
+      <th>Live Load</th>
+      <th>Live Unload</th>
+      <th>Stop</th>
+      <th>Stop Drop</th>
+      <th>Unsched Time</th>
+      <th>Layover</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,6 +31,15 @@
         <td><%= driver_log.start_odometer %></td>
         <td><%= driver_log.end_odometer %></td>
         <td><%= driver_log.miles = driver_log.end_odometer - driver_log.start_odometer %></td>
+        <td><%= driver_log.hk %>
+        <td><%= driver_log.ad %>
+        <td><%= driver_log.ar %>
+        <td><%= driver_log.ll %>
+        <td><%= driver_log.lu %>
+        <td><%= driver_log.st %>
+        <td><%= driver_log.sd %>
+        <td><%= driver_log.ut %>
+        <td><%= driver_log.lo %>
         <td><%= link_to 'Show', driver_log %></td>
         <td><%= link_to 'Edit', edit_driver_log_path(driver_log) %></td>
         <td><%= link_to 'Destroy', driver_log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
